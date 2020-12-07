@@ -1,0 +1,45 @@
+/* pages/detail/detail.wxss */
+.page{
+  width: 100%;
+}
+.page image{
+  margin-bottom: 20rpx;
+}
+.page .font{
+
+  margin-left: 20rpx;
+}
+.font .name{
+  font-variant: normal;
+  font-weight: 700;
+  font-size: large;
+}
+.font .sales{
+  font-size: 25rpx;
+  font-weight: 320;
+  margin-top: 20rpx;
+}
+.font .introduction{
+  font-size: initial;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.font .priceBox{
+  position: relative;
+  top: 0;
+}
+.priceBox .price{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20rpx;
+  font-family:Arial
+}
+.color-red{
+  color: red;
+}
+.priceBox .content{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

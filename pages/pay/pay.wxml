@@ -1,0 +1,3 @@
+<!--pages/pay/pay.wxml-->
+<text class="price">请截图扫码支付 <text class="item">{{totalPrice}}</text> 元</text>
+<image src="{{payImage}}"></image>

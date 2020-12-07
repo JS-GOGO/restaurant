@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/buy/buy",
+    "pages/message/message",
+    "pages/myComment/myComment",
+    "pages/myOrder/myOrder",
+    "pages/pay/pay",
+    "pages/shop/shop",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "微信规定必须要说明定位用途"
+    }
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#17abe3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/shouye-i.png",
+        "iconPath": "image/shouye-o.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/caidan-i.png",
+        "iconPath": "image/caidan-o.png",
+        "pagePath": "pages/buy/buy",
+        "text": "菜单"
+      },
+      {
+        "selectedIconPath": "image/wode-i.png",
+        "iconPath": "image/wode-o.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,52 @@
+page{
+  background-color: #F5F5F5;
+}
+.head{
+  width: 100%;
+  height: 130rpx;
+  background-color: #fff;
+  line-height: 130rpx;
+  font-size: 30rpx;
+  font-weight:bold;
+  font-family: "微软雅黑";
+  padding: 20rpx 40rpx;
+}
+.head_pic{
+  float: right;
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 50%;
+  margin-right: 20rpx; 
+  margin-top: 10rpx;
+}
+.div{
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid #F5F5F5;
+  background-color: #fff;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-weight:bold;
+  font-family: "微软雅黑";
+  padding: 20rpx 40rpx;
+}
+.div_content{
+  float: right;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+}
+.head:hover{
+  background-color: #ccc;
+}
+.div:hover{
+  background-color: #ccc;
+}
+.jiantou{
+  float: right;
+  height: 40rpx;
+  width: 60rpx;
+  margin-right: 50rpx;
+  margin-top: 45rpx;
+} 

@@ -1,0 +1,53 @@
+<view wx:if="{{listLength > 0}}">
+    <view class="order-box">
+        <view class="h4 color-green">桌号：{{table.name}}</view>
+        <view class="flex-display padding-15" wx:for="{{table.cart}}" wx:key="index">
+            <view class="flex-width-1 order-font" style='margin-left:50rpx;'>
+                <view>{{item.name}}</view>
+            </view>
+            <view class="order-font">x{{item.quantity}}</view>
+        </view>
+        <view class="order-detail">
+            <view class="order-left">
+                <text class="order-date">用餐人数：</text>
+            </view>
+            <view class="order-right">
+                <text class="order-price">{{table.peoples}}位</text>
+            </view>
+        </view>
+        <view class="order-detail">
+            <view class="order-left">
+                <text class="order-date">用餐备注：</text>
+                <van-cell-group>
+                    <van-field required clearable
+                        placeholder="请输入备注" />
+                </van-cell-group>
+            </view>
+            <view class="order-right">
+                <text class="order-price">{{item.remarks}}</text>
+            </view>
+        </view>
+        <view class="order-detail">
+            <view class="order-left">
+                <text class="order-date">{{item.order_id}}</text>
+            </view>
+            <view class="order-right">
+                <text class="order-price color-red">￥{{totalPrice}}</text>
+            </view>
+        </view>
+        <view>
+            <text class="color-green order_border" wx:if="{{item.pay}}" bindtap="gotoPay">已支付</text>
+            <text class="color-red order_border" wx:else bindtap="gotoPay">去支付</text>
+            <text class="color-green order_border" bindtap="gotoPinglun">去评论</text>
+        </view>
+    </view>
+</view>
+
+<view wx:else class="no-order-box padding-top-30">
+    <view class="cart-off">
+        <image src="../../image/shopCart.png"></image>
+    </view>
+    <view class="no-order">购物车，空空如也:-)</view>
+    <navigator open-type="switchTab" url="../buy/buy" hover-class="navigator-hover" class="continueBook"> 去菜单逛逛
+    </navigator>
+</view>

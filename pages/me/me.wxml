@@ -1,0 +1,22 @@
+<view class="page">
+  <!-- <navigator url="../../pages/login/login"> -->
+    <view class="login" bindtap="check">
+      <open-data type="userAvatarUrl" class="login_pic" bindtap="getuserinfo"></open-data>
+      <view class="login_content color_white"><open-data type="userNickName"></open-data></view>
+    </view>
+    <view class='list' bindtap="dingdan">
+      <image style="float:left;width:50rpx;height:50rpx;margin-top:20rpx;margin-right:15rpx;" src='../../image/dingdan.png'></image>
+      我的订单
+      <image style="float:right;width:50rpx;height:50rpx;margin-top:20rpx;margin-right:20rpx;" src='../../image/箭头.png'></image>
+    </view>
+    <view class='list' bindtap="kefu">
+       <image style="float:left;width:50rpx;height:50rpx;margin-top:20rpx;margin-right:15rpx;" src='../../image/kefu.png'></image>
+       联系客服
+       <image style="float:right;width:50rpx;height:50rpx;margin-top:20rpx;margin-right:20rpx;" src='../../image/箭头.png'></image>
+    </view>
+    <view class='list' bindtap="pinglun">
+        <image style="float:left;width:50rpx;height:50rpx;margin-top:20rpx;margin-right:15rpx;" src='../../image/pinglun.png'></image>
+        我的评价
+        <image style="float:right;width:50rpx;height:50rpx;margin-top:20rpx;margin-right:20rpx;" src='../../image/箭头.png'></image>
+    </view>
+</view>

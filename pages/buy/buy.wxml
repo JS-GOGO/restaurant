@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="content">
+    <!-- 左侧菜品分类导航栏 -->
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+      <block wx:for="{{left_sort}}" wx:key="index">
+        <van-sidebar-item title="{{item}}" />
+      </block>
+    </van-sidebar>
+    <!-- 右侧菜品栏 -->
+    <scroll-view scroll-y scroll-with-animation scroll-into-view="{{scrollInto}}" id="right-cont"
+      scroll-top="{{scrollTop}}" class="right-cont" bind:scroll="handleScroll">
+      <van-empty wx:if="{{!menus || menus.length == 0}}" description="暂无商品" />
+      <!-- 菜品 -->
+      <view wx:for="{{menus}}" wx:key="id">
+        <navigator catch:tap="funNull" url="/pages/detail/detail?id={{item._id}}&idx={{index}}">
+          <van-card bindtap="gotoDetail" id="{{item.sortEng}}" centered="true" lazy-load="true" price="{{item.price}}" thumb-mode="aspectFill"
+          tag="{{ item.badge ? item.badge : '' }}" title="{{item.name}}" desc="销售量：{{item.sales}}"
+          thumb="{{item.image}}">
+          <view class="goods-btn" slot="footer">
+            <view wx:for="{{storageCart}}" wx:for-index='i' wx:key='i' wx:for-item="t">
+              <van-icon class="minus" wx:if="{{item._id == t._id}}" name="minus" color="#e64340" size="50rpx" data-idx="{{index}}"
+              catchtap="lessCart1" />
+              <text class="quantityTex" wx:if="{{item._id == t._id }}">{{t.quantity}}</text>
+            </view>
+            <van-icon class="add" name="add" color="#e64340" size="50rpx" data-idx="{{index}}" catchtap="addCart1" />
+          </view>
+        </van-card>
+        </navigator>
+      </view>
+    </scroll-view>
+    <!-- 底部弹出框 -->
+    
+    <!-- 底部 -->
+    <view class="bottom_box">
+      <view class="shop_cartBox" bindtap="cascadeToggle">
+        <image class="shopCart_img" src="../../image/shopCart.png"></image>
+      </view>
+      <view class="all_money">总计：{{totalPrice}}元，{{totalNum}}件</view>
+      <view class="choose_ok color-block" bindtap="gotoOrder">下单</view>
+    </view>
+    <!-- 模态框 -->
+
+  </view>
+</view>

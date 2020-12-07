@@ -1,0 +1,7 @@
+<view class="modal" hidden="{{!modalShow}}">
+  <view class="panel">
+    <image src="../../image/shanchu.png" class="icon-shanchu1" bindtap="onClose"></image>
+    <!-- slot插槽 -->
+    <slot name="modal-content"></slot>
+  </view>
+</view>

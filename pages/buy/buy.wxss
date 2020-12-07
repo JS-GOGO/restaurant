@@ -1,0 +1,82 @@
+.right-cont {
+  height: calc(100% - 80rpx);
+  width: 77%;
+  position: fixed;
+  margin-left: 25%;
+  top: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+  background: #fff;
+  overflow: auto;
+}
+
+.goods-btn {
+  position: absolute;
+  right: 32rpx;
+  bottom: 32rpx;
+}
+.minus{
+  position: absolute;
+  bottom: 10rpx;
+  right: 100rpx;
+}
+.quantityTex{
+  position: absolute;
+  bottom: 15rpx;
+  right: 60rpx;
+}
+
+
+/* 底部 */
+.bottom_box {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  z-index: 10;
+  background-color: #fff;
+}
+.shop_cartBox {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -40rpx;
+  left: 20rpx;
+}
+.shopCart_img {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 24rpx;
+  left: 24rpx;
+}
+.all_money {
+  position: absolute;
+  width: 50%;
+  height: 80rpx;
+  top: 0;
+  left: 25%;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.choose_ok {
+  position: absolute;
+  width: 25%;
+  height: 80rpx;
+  top: 0;
+  right: 0;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+}
+.color-block{
+  color: #fff;
+  font-size: 35rpx;
+  background: #1296db;
+}

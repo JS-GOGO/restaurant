@@ -1,0 +1,8 @@
+/* pages/pay/pay.wxss */
+.price{
+  text-align: center;
+  font-size:60rpx ;
+}
+.price .item{
+color: red;
+}

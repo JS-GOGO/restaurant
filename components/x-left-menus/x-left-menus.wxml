@@ -1,0 +1,26 @@
+<!--components/x-left-menus/x-left-menus.wxml-->
+<scroll-view scroll-y class="right-cont">
+      <block wx:for="{{menus}}" wx:key="index">
+        <image src="{{item.image}}" class="img_box"></image>
+        <view class="mb_bottom">
+          <view class="cai_title" data-index="{{index}}">{{item.name}}</view>
+          <view class="cai_desc"> 销量：{{item.sales}} </view>
+          <view class="price-stepper">
+            <view class="cai_price" data-index="{{index}}">{{item.price}}</view>
+          </view>
+        </view>
+        <view class="stepper">
+         <view class="stepper-box">
+            <!-- 减号 -->
+          <van-button type="info" round size="mini" icon="minus" class="minus" data-id="{{item._id}}"  wx:if="{{item.quantity <= 0 ? 'true' : 'false'}}" bindtap="minusCount"
+             data-index="{{index}}" />
+          <!-- 数量 -->
+          <view class="quantity" hidden="{{item.quantity<=0}}" data-id="{{item._id}}" data-num="{{item.quantity}}">
+            {{quantity ? quantity : item.quantity}}</view>
+          <!-- 加号 -->
+          <van-button type="info" round size="mini" icon="plus" class="plus" data-id="{{item._id}}" data-index="{{index}}" bindtap="addCount" />
+         </view>
+
+        </view>
+      </block>
+    </scroll-view>

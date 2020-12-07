@@ -1,0 +1,12 @@
+<!-- 这里是直接显示头像和昵称 应该使用本地缓存 -->
+<view class="head">
+  头像
+   <image src='../../image/箭头.png' class='jiantou' ></image> 
+  <open-data src='../../image/logo60.png' class='head_pic' type="userAvatarUrl"></open-data>
+</view>
+<view class='div'>
+  用户名
+  <image style="margin-top:25rpx" src='../../image/箭头.png' class='jiantou'></image> 
+  <open-data class='div_content' type="userNickName"></open-data>
+</view>
+<button style='height:100rpx;line-height:100rpx;margin-top:60rpx;background-color:#fff;color:red;font-size:30rpx;padding: 30rpx auto;' bindtap="loginBtnClick"  type="primary" form-type="submit">退出登录</button>

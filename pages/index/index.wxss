@@ -1,0 +1,43 @@
+#dizhi {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.saoma {
+ width: 100px;
+ height: 100px;
+ overflow: unset;
+ padding: 15px 12px 0 6px;
+}
+
+.shouye {
+  display: flex;
+ justify-content: center;
+ margin-top: 200rpx;
+}
+
+.shouyetext {
+ display: flex;
+ justify-content: center;
+ margin-top: 20rpx;
+}
+/* 导航 */
+.distance-bar{
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx;
+}
+.distance-bar .distance{
+  font-size: 28rpx;
+}
+.distance-bar .shop-message{
+  display: flex;
+  align-items: center;
+}
+.distance-bar .shop-message .message{
+  font-size: 26rpx;
+}
+.distance-bar .shop-message .go{
+  height: 32rpx;
+  width: 32rpx;
+}

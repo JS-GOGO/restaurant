@@ -1,0 +1,22 @@
+<!--1.公告 -->
+<van-notice-bar left-icon="volume-o" text="{{title}}" speed='20' />
+<!-- 2.轮播图展示 -->
+<x-swiper list="{{banners}}"></x-swiper>
+
+<view class="distance-bar">
+    <view class="distance" wx:if="{{distance}}">距离您{{distance}}千米</view>
+    <!-- z这里传递不了参数？？？？ -->
+    <navigator url="/pages/shop/shop?latitude={{latitude}}&longitude={{longitude}}" hover-class="none">
+      <view class="shop-message">
+        <view class="message">查看门店信息</view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+  </view>
+<!-- 3.扫码图标 -->
+<view>
+      <image id="dizhi" src="/image/dizhi.png" /> 饭店地址：广州市培正学院培正大酒店二楼</view>
+<view bindtap='btnclick1' class="shouye">
+      <image class="saoma" src="/image/saoma.png" />
+</view>
+<view class="shouyetext">扫码点餐</view>

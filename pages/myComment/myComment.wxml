@@ -1,0 +1,11 @@
+<!-- <view>
+  <block wx:for="{{pinglunList}}" wx:key="_id">
+    <view class="pinglun-panel">
+      <x-pinglun-card 
+      pinglun="{{item}}" 
+      bindtap="goComment"
+      data-pinglunid="{{item._id}}" />
+    </view>
+  </block>
+</view> -->
+<view>评价展示页面</view>

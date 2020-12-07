@@ -1,0 +1,15 @@
+<!--pages/detail/detail.wxml-->
+<view class="page">
+  <image src="{{dishes.image}}"></image>
+ <view class="font">
+  <text class="name">{{dishes.name}}</text>
+  <view class="sales">销量 ：{{dishes.sales}}</view>
+  <view class="introduction">介绍 ：{{dishes.introduction}}</view>
+  <view class="priceBox">
+    <view class="price color-red">¥ {{dishes.price}}</view>
+  <!-- 加减器 -->
+  <van-stepper class="content" value="{{dishes.quantity}}" min= "0" bind:change="changeContent" />
+  </view>
+  
+ </view>
+</view>

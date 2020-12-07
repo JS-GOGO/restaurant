@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "x-swiper":"/components/x-swiper/x-swiper",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-icon": "@vant/weapp/icon/index"
+
+  },
+  
+   "navigationBarTitleText": "餐厅首页",
+   "enablePullDownRefresh": true
+}
